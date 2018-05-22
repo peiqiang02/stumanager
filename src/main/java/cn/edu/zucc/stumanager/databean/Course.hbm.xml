@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-5-22 21:15:08 by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="stu_grade_manager" dynamic-insert="false" dynamic-update="false" mutable="true" name="cn.edu.zucc.stumanager.databean.Course" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="course">
+        <id name="curId" type="int">
+            <column name="cur_id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="curName" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="cur_name" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="teaId" optimistic-lock="true" type="int" unique="false">
+            <column name="tea_id" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="curIntroduction" optimistic-lock="true" type="string" unique="false">
+            <column length="11" name="cur_introduction" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

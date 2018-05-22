@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-5-22 21:15:08 by Hibernate Tools 5.1.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="stu_grade_manager" dynamic-insert="false" dynamic-update="false" mutable="true" name="cn.edu.zucc.stumanager.databean.Student" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="student">
+        <id name="stuId" type="int">
+            <column name="stu_id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="stuAge" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="stu_age"/>
+        </property>
+        <property generated="never" lazy="false" name="stuName" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="stu_name" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="stuSex" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="stu_sex" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="stuMajor" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="stu_major" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="stuClass" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="stu_class" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
