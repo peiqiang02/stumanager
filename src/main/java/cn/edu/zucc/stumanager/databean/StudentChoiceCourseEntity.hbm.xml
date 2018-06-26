@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.zucc.stumanager.databean.StudentChoiceCourseEntity" table="student_choice_course"
+           schema="stu_grade_manager">
+        <id name="id" column="id"/>
+        <property name="curId" column="cur_id"/>
+        <property name="stuId" column="stu_id"/>
+        <property name="examScore" column="exam_score"/>
+        <property name="taskScore" column="task_score"/>
+        <property name="nomalScore" column="nomal_score"/>
+        <property name="totalGrade" column="total_grade"/>
+    </class>
+</hibernate-mapping>

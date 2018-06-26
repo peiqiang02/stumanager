@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.zucc.stumanager.databean.TaskEntity" table="task" schema="stu_grade_manager">
+        <id name="id" column="id"/>
+        <property name="taskName" column="task_name"/>
+        <property name="taskDate" column="task_date"/>
+        <property name="taskContent" column="task_content"/>
+        <property name="curId" column="cur_id"/>
+    </class>
+</hibernate-mapping>

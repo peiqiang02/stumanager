@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.zucc.stumanager.databean.TeacherEntity" table="teacher" schema="stu_grade_manager">
+        <id name="teaId" column="tea_id"/>
+        <property name="teaAge" column="tea_age"/>
+        <property name="teaName" column="tea_name"/>
+        <property name="teaSex" column="tea_sex"/>
+        <property name="teaType" column="tea_type"/>
+        <property name="teaPassword" column="tea_password"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="cn.edu.zucc.stumanager.databean.CourseEntity" table="course" schema="stu_grade_manager">
+        <id name="curId" column="cur_id"/>
+        <property name="curName" column="cur_name"/>
+        <property name="teaId" column="tea_id"/>
+        <property name="curIntroduction" column="cur_introduction"/>
+    </class>
+</hibernate-mapping>

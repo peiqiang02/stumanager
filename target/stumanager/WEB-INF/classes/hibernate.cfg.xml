@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--数据库连接url配置-->
+    <property name="connection.url">jdbc:mysql://106.14.177.245:3306/stu_grade_manager</property>
+    <!--数据库驱动配置-->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <!--数据库用户名配置-->
+    <!--数据库密码配置-->
+      <mapping class="cn.edu.zucc.stumanager.databean.CheckEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.CheckInfoEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.CourseEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.StudentEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.StudentChoiceCourseEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.TaskEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.TaskGradeEntity"/>
+      <mapping class="cn.edu.zucc.stumanager.databean.TeacherEntity"/>
+      <mapping resource="cn/edu/zucc/stumanager/databean/TaskEntity.hbm.xml"/>
+
+      <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
